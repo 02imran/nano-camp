@@ -1,32 +1,14 @@
 void main(List<String> args) {
-  int age = 522;
+  //Map people = {'bhola': 'weather', 'dhaka': 'jam'};
 
-  switch (age) {
-    case 15:
-      print('you are not even a teen ager ');
-      break;
+  Map<String, String> people = new Map<String, String>();
 
-    case 21:
-      print('you are now a teen ager ');
-      break;
+  people.putIfAbsent('weather', () => 'dhaka');
+  people.putIfAbsent('bhola', () => 'jam');
+  people.putIfAbsent('barisal', () => 'school');
 
-    case 52:
-      print('you old ');
-      break;
-
-    default:
-      print('you are not in the selected category');
-      break;
-  }
-
-  int value;
-  int init = 90;
-  int max = 100;
-
-  value = init;
-
-  do {
-    print(value);
-    value++;
-  } while (value <= max);
+  print(people);
+  print('values are = ${people.values}');
+  print('keys are = ${people.keys}');
+}
 }
