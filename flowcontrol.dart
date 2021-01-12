@@ -19,14 +19,14 @@ void main(List<String> args) {
       break;
   }
 
-  int value;
-  int init = 1;
-  int max = 10;
+  // int value;
+  // int init = 1;
+  // int max = 10;
 
-  value = init;
+  // value = init;
 
-  do {
-    print(value);
-    value++;
-  } while (value <= max);
+  // do {
+  //   print(value);
+  //   value++;
+  // } while (value <= max);
 }
